@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <!-- Force device lock on critical security threat -->
+        <force-lock />
+        
+        <!-- Wipe device data on confirmed theft (user-initiated) -->
+        <wipe-data />
+        
+        <!-- Monitor password attempts -->
+        <watch-login />
+        
+        <!-- Reset password (for recovery) -->
+        <reset-password />
+        
+        <!-- Limit password attempts before wipe -->
+        <limit-password />
+        
+        <!-- Disable camera if needed during lockdown -->
+        <disable-camera />
+    </uses-policies>
+</device-admin>

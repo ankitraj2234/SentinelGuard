@@ -1,0 +1,36 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/crash/CrashHandler.kt:95:123 'field versionCode: Int' is deprecated. Deprecated in Java.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/email/EmailService.kt:134:26 'val isConnected: Boolean' is deprecated. Deprecated in Java.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/network/NetworkInfoManager.kt:256:45 'static fun calculateSignalLevel(p0: Int, p1: Int): Int' is deprecated. Deprecated in Java.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/network/NetworkInfoManager.kt:424:52 'val line1Number: String!' is deprecated. Deprecated in Java.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/ForensicReportScreen.kt:546:80 'val Icons.Filled.Send: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Send.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/PermissionScreen.kt:44:26 'val LocalLifecycleOwner: ProvidableCompositionLocal<LifecycleOwner>' is deprecated. Moved to lifecycle-runtime-compose library in androidx.lifecycle.compose package.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/SetupScreen.kt:347:31 'val Icons.Filled.Help: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Help.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/TimelineScreen.kt:103:58 'val Icons.Filled.Login: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Login.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/TimelineScreen.kt:104:56 'val Icons.Filled.Logout: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Logout.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/UsageStatisticsScreen.kt:435:49 'val Icons.Filled.TrendingUp: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.TrendingUp.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/screens/UsageStatisticsScreen.kt:435:79 'val Icons.Filled.TrendingDown: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.TrendingDown.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/theme/Theme.kt:155:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///E:/Android/SentinelGuard/app/src/main/java/com/sentinelguard/ui/theme/Theme.kt:156:20 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+
+BUILD SUCCESSFUL in 26s
+16 actionable tasks: 2 executed, 14 up-to-date

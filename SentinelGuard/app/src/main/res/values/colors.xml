@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    SentinelGuard Professional Color Scheme
+    
+    Design: Clean, professional security app aesthetic
+    Primary: Emerald Green (trust, security, protection)
+    Style: Modern, high contrast, accessible
+    -->
+    
+    <!-- ========== Primary Colors (Teal/Cyan) ========== -->
+    <color name="primary">#0891B2</color>
+    <color name="primary_dark">#0E7490</color>
+    <color name="primary_light">#22D3EE</color>
+    <color name="primary_container">#164E63</color>
+    
+    <!-- ========== Secondary Colors (Cool Gray) ========== -->
+    <color name="secondary">#6B7280</color>
+    <color name="secondary_dark">#4B5563</color>
+    <color name="secondary_light">#9CA3AF</color>
+    
+    <!-- ========== Dark Theme Backgrounds ========== -->
+    <color name="background_dark">#111827</color>
+    <color name="background_dark_secondary">#1F2937</color>
+    <color name="background_dark_tertiary">#374151</color>
+    <color name="surface_dark">#1F2937</color>
+    <color name="surface_dark_variant">#374151</color>
+    
+    <!-- ========== Light Theme Backgrounds ========== -->
+    <color name="background_light">#F9FAFB</color>
+    <color name="background_light_secondary">#F3F4F6</color>
+    <color name="background_light_tertiary">#E5E7EB</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_light_variant">#F3F4F6</color>
+    
+    <!-- ========== Dark Theme Text ========== -->
+    <color name="text_dark_primary">#F9FAFB</color>
+    <color name="text_dark_secondary">#9CA3AF</color>
+    <color name="text_dark_tertiary">#6B7280</color>
+    
+    <!-- ========== Light Theme Text ========== -->
+    <color name="text_light_primary">#111827</color>
+    <color name="text_light_secondary">#4B5563</color>
+    <color name="text_light_tertiary">#6B7280</color>
+    
+    <!-- ========== Status Colors ========== -->
+    <color name="status_secure">#10B981</color>
+    <color name="status_warning">#F59E0B</color>
+    <color name="status_danger">#EF4444</color>
+    <color name="status_info">#3B82F6</color>
+    
+    <!-- ========== Risk Level Colors ========== -->
+    <color name="risk_secure">#10B981</color>
+    <color name="risk_low">#22C55E</color>
+    <color name="risk_medium">#F59E0B</color>
+    <color name="risk_high">#F97316</color>
+    <color name="risk_critical">#EF4444</color>
+    
+    <!-- ========== Button Colors ========== -->
+    <color name="button_primary">#10B981</color>
+    <color name="button_primary_pressed">#059669</color>
+    <color name="button_secondary">#374151</color>
+    <color name="button_destructive">#EF4444</color>
+    
+    <!-- ========== Border Colors ========== -->
+    <color name="border_dark">#374151</color>
+    <color name="border_light">#E5E7EB</color>
+    <color name="divider_dark">#1F2937</color>
+    <color name="divider_light">#F3F4F6</color>
+    
+    <!-- ========== Glass Effect ========== -->
+    <color name="glass_dark">#1AFFFFFF</color>
+    <color name="glass_light">#1A000000</color>
+    <color name="glass_border_dark">#33FFFFFF</color>
+    <color name="glass_border_light">#33000000</color>
+    
+    <!-- ========== Shadow Colors ========== -->
+    <color name="shadow_dark">#40000000</color>
+    <color name="shadow_light">#1A000000</color>
+    
+    <!-- ========== Legacy Compatibility ========== -->
+    <color name="primary_variant">#059669</color>
+    <color name="background_primary">#111827</color>
+    <color name="background_secondary">#1F2937</color>
+    <color name="background_tertiary">#374151</color>
+    <color name="surface_glass">#1AFFFFFF</color>
+    <color name="surface_glass_elevated">#33FFFFFF</color>
+    <color name="surface_card">#1F2937</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_yellow">#F59E0B</color>
+    <color name="accent_red">#EF4444</color>
+    <color name="accent_blue">#3B82F6</color>
+    <color name="text_primary">#F9FAFB</color>
+    <color name="text_secondary">#9CA3AF</color>
+    <color name="text_tertiary">#6B7280</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="gradient_start">#10B981</color>
+    <color name="gradient_end">#059669</color>
+    <color name="border_glass">#33FFFFFF</color>
+    <color name="border_subtle">#1AFFFFFF</color>
+</resources>

@@ -1,0 +1,285 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sentinelguard"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Network permissions for email alerts only -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:6:5-67
+12-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:7:5-79
+13-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:7:22-76
+14
+15    <!-- Location permission (only when app is open) -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:10:5-79
+16-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:11:5-81
+17-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:11:22-78
+18
+19    <!-- Detect device boot for security signal -->
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:14:5-81
+20-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:14:22-78
+21
+22    <!-- Biometric authentication -->
+23    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+23-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:17:5-72
+23-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:17:22-69
+24
+25    <!-- Read phone state for SIM detection -->
+26    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:20:5-75
+26-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:20:22-72
+27
+28    <!-- App Usage Stats (Special Permission - must be granted in Settings) -->
+29    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+29-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:23:5-24:47
+29-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:23:22-75
+30
+31    <!-- Foreground Service for background monitoring -->
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:27:5-77
+32-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:27:22-74
+33    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+33-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:28:5-89
+33-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:28:22-86
+34
+35    <!-- Notifications (Android 13+) -->
+36    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+36-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:31:5-77
+36-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:31:22-74
+37
+38    <!-- Feature declarations -->
+39    <uses-feature
+39-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:34:5-36:36
+40        android:name="android.hardware.fingerprint"
+40-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:35:9-52
+41        android:required="false" />
+41-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:36:9-33
+42    <uses-feature
+42-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:37:5-39:36
+43        android:name="android.hardware.location"
+43-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:38:9-49
+44        android:required="false" />
+44-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:39:9-33
+45
+46    <!-- suppress DeprecatedClassUsageInspection -->
+47    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+47-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ankit\.gradle\caches\8.9\transforms\75d17a942473eb3a5f9b0b93206ed648\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:5-74
+47-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ankit\.gradle\caches\8.9\transforms\75d17a942473eb3a5f9b0b93206ed648\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:22-71
+48
+49    <permission
+49-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+50        android:name="com.sentinelguard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+50-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+51        android:protectionLevel="signature" />
+51-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+52
+53    <uses-permission android:name="com.sentinelguard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+53-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+53-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+54
+55    <application
+55-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:41:5-97:19
+56        android:name="com.sentinelguard.SentinelGuardApp"
+56-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:42:9-41
+57        android:allowBackup="false"
+57-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:43:9-36
+58        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+58-->[androidx.core:core:1.15.0] C:\Users\ankit\.gradle\caches\8.9\transforms\40ac22e025f5778d8eb6f3c62ab11e59\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+59        android:dataExtractionRules="@xml/data_extraction_rules"
+59-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:44:9-65
+60        android:extractNativeLibs="false"
+61        android:fullBackupContent="false"
+61-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:45:9-42
+62        android:icon="@mipmap/ic_launcher"
+62-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:46:9-43
+63        android:label="@string/app_name"
+63-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:47:9-41
+64        android:roundIcon="@mipmap/ic_launcher_round"
+64-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:48:9-54
+65        android:supportsRtl="true"
+65-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:49:9-35
+66        android:theme="@style/Theme.SentinelGuard" >
+66-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:50:9-51
+67
+68        <!-- Main Activity -->
+69        <activity
+69-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:54:9-63:20
+70            android:name="com.sentinelguard.ui.MainActivity"
+70-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:55:13-44
+71            android:exported="true"
+71-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:56:13-36
+72            android:screenOrientation="portrait"
+72-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:57:13-49
+73            android:theme="@style/Theme.SentinelGuard" >
+73-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:58:13-55
+74            <intent-filter>
+74-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:59:13-62:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:60:17-69
+75-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:60:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:61:17-77
+77-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:61:27-74
+78            </intent-filter>
+79        </activity>
+80
+81        <!-- Boot receiver for security detection -->
+82        <receiver
+82-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:66:9-74:20
+83            android:name="com.sentinelguard.security.collector.receivers.BootReceiver"
+83-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:67:13-70
+84            android:enabled="true"
+84-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:68:13-35
+85            android:exported="false" >
+85-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:69:13-37
+86            <intent-filter>
+86-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:70:13-73:29
+87                <action android:name="android.intent.action.BOOT_COMPLETED" />
+87-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:71:17-79
+87-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:71:25-76
+88                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+88-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:72:17-82
+88-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:72:25-79
+89            </intent-filter>
+90        </receiver>
+91
+92        <!-- Network state receiver -->
+93        <receiver
+93-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:77:9-84:20
+94            android:name="com.sentinelguard.security.collector.receivers.NetworkChangeReceiver"
+94-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:78:13-79
+95            android:enabled="true"
+95-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:79:13-35
+96            android:exported="false" >
+96-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:80:13-37
+97            <intent-filter>
+97-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:81:13-83:29
+98                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+98-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:82:17-79
+98-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:82:25-76
+99            </intent-filter>
+100        </receiver>
+101
+102        <!-- Monitoring Service for background security checks -->
+103        <service
+103-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:87:9-95:19
+104            android:name="com.sentinelguard.service.MonitoringService"
+104-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:88:13-54
+105            android:enabled="true"
+105-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:89:13-35
+106            android:exported="false"
+106-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:90:13-37
+107            android:foregroundServiceType="specialUse" >
+107-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:91:13-55
+108            <property
+108-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:92:13-94:55
+109                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+109-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:93:17-76
+110                android:value="security_monitoring" />
+110-->E:\Android\SentinelGuard\app\src\main\AndroidManifest.xml:94:17-52
+111        </service>
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ankit\.gradle\caches\8.9\transforms\e87357b980109ddabf43b4bf9fa4cc48\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ankit\.gradle\caches\8.9\transforms\e87357b980109ddabf43b4bf9fa4cc48\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ankit\.gradle\caches\8.9\transforms\e87357b980109ddabf43b4bf9fa4cc48\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ankit\.gradle\caches\8.9\transforms\e87357b980109ddabf43b4bf9fa4cc48\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+117
+118        <meta-data
+118-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ankit\.gradle\caches\8.9\transforms\f98cb7a3fd8c1678b9f6d3ebd41b5d4b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+119            android:name="com.google.android.gms.version"
+119-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ankit\.gradle\caches\8.9\transforms\f98cb7a3fd8c1678b9f6d3ebd41b5d4b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+120            android:value="@integer/google_play_services_version" />
+120-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ankit\.gradle\caches\8.9\transforms\f98cb7a3fd8c1678b9f6d3ebd41b5d4b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+121
+122        <provider
+122-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+124            android:authorities="com.sentinelguard.androidx-startup"
+124-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+127-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+128                android:value="androidx.startup" />
+128-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.9\transforms\c379afcd9d4bcd568a01aa7bf5e75e2e\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ankit\.gradle\caches\8.9\transforms\133adc60da58fdfd56163b4711c848b5\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+130-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ankit\.gradle\caches\8.9\transforms\133adc60da58fdfd56163b4711c848b5\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+131                android:value="androidx.startup" />
+131-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ankit\.gradle\caches\8.9\transforms\133adc60da58fdfd56163b4711c848b5\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+134                android:value="androidx.startup" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+135        </provider>
+136
+137        <service
+137-->[androidx.room:room-runtime:2.6.1] C:\Users\ankit\.gradle\caches\8.9\transforms\ed64f4c5e92b93b6ea039846974481cb\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+138            android:name="androidx.room.MultiInstanceInvalidationService"
+138-->[androidx.room:room-runtime:2.6.1] C:\Users\ankit\.gradle\caches\8.9\transforms\ed64f4c5e92b93b6ea039846974481cb\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+139            android:directBootAware="true"
+139-->[androidx.room:room-runtime:2.6.1] C:\Users\ankit\.gradle\caches\8.9\transforms\ed64f4c5e92b93b6ea039846974481cb\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+140            android:exported="false" />
+140-->[androidx.room:room-runtime:2.6.1] C:\Users\ankit\.gradle\caches\8.9\transforms\ed64f4c5e92b93b6ea039846974481cb\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+141
+142        <receiver
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+143            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+144            android:directBootAware="false"
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+145            android:enabled="true"
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+146            android:exported="true"
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+147            android:permission="android.permission.DUMP" >
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+149                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+152                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+153            </intent-filter>
+154            <intent-filter>
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+155                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+156            </intent-filter>
+157            <intent-filter>
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+158                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ankit\.gradle\caches\8.9\transforms\f6203a9afc1f1edeef607550d035630e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+159            </intent-filter>
+160        </receiver>
+161    </application>
+162
+163</manifest>
